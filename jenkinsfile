@@ -5,6 +5,9 @@ pipeline {
         IMAGE_NAME = "1ms24mc048/exam"
         DOCKERHUB_CREDENTIALS = credentials('dockerhubID')
     }
+    triggers{
+        cron("* * * *")
+    }
 
     stages {
 
