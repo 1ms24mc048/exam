@@ -14,7 +14,7 @@ pipeline {
         stage('Checkout git') {
             steps {
                 git(
-                    url: 'https://github.com/1ms24mc048/exam1',
+                    url: 'https://github.com/1ms24mc048/exam',
                     branch: 'main',
                     credentialsId : 'dockerhubID'
                 )
