@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "1ms24mc048/exam"
+        IMAGE_NAME = "1ms24mc048/exam1"
         DOCKERHUB_CREDENTIALS = credentials('dockerhubID')
     }
     triggers {
@@ -14,7 +14,7 @@ pipeline {
         stage('Checkout git') {
             steps {
                 git(
-                    url: 'https://github.com/1ms24mc048/exam',
+                    url: 'https://github.com/1ms24mc048/exam1',
                     branch: 'main',
                     credentialsId : 'dockerhubID'
                 )
