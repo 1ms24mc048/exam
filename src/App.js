@@ -5,18 +5,15 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Login
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <form>
+        <label>Username : <input className='sub' name='name' type='text' required></input> </label><br/>
+        <label>Password : <input className='sub' name='pass' type='password' required></input>  </label> <br/><br/>
+        
+        <button className='sub' type='submit'>LOGIN</button>
+        </form>
       </header>
     </div>
   );
